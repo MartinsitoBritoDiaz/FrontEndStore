@@ -82,7 +82,7 @@ img{
 
 /* Main */
 .contenedor{
-    max-width: 120rem;
+    max-width: 100rem;
     margin: 0 auto;
 }
 
@@ -165,14 +165,24 @@ img{
 
 /* Nosotros Descripcion */
 .contenedor .nosotros--descripcion{
-    width: 85rem;
     margin: 0 auto;
 }
 
 .nosotros--descripcion{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 4rem;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+
+@media (min-width: 768px) {
+    .nosotros--descripcion{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nosotros--imagen{
+        grid-column: 2 / 3;
+    }
 }
 
 .nosotros--parrafo{
@@ -180,10 +190,10 @@ img{
 }
 
 .nosotros--imagen{    
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+    grid-row: 1 / 2;
     min-height: 30rem;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-image: url(../img/nosotros.jpg);
 }
 

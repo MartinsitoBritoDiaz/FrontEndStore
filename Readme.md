@@ -24,7 +24,7 @@ Thanks for checking out code.
 
 ## Links
 
-🛠🦺
+https://stingfrontendstore.netlify.app/
 
 ## Author
 

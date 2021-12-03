@@ -112,6 +112,10 @@ img{
     background-color: var(--primary-Dark);
 }
 
+.producto__imagen{
+    cursor: pointer;
+}
+
 .producto__nombre{
     font-size: 3rem;
 }

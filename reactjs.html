@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="preload" href="/css/styles.css" as="style">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>FrontEndStore</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="/img/logo.png" alt="logo">
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace navegacion__enlace--activo"" href="index.html">tienda</a>
+        <a class="navegacion__enlace href="nosotros.html">nosotros</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1 class="contenedor__titulo"> React Js</h1>
+
+        <div class="camisa">
+            <img src="/img/1.jpg" alt="Imagen del Producto">
+            <div class="camisa__contenido">
+                <p class="camisa__parrafo">He standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                <form class="formulario">
+                    <select class="formulario__campo">
+                        <option disabled selected>Size</option>
+                        <option>Small</option>
+                        <option>Medium</option>
+                        <option>Large</option>
+                        <option>Extra Large</option>
+                    </select>
+    
+                    <input class="formulario__campo" type="number" min="1" placeholder="Cantidad">
+    
+                    <input class="formulario__submit" type="submit" value="Agregar al Carrito">
+                </form>
+            </div>
+        </div>
+    </main> 
+
+    <footer class="footer">
+        <p class="footer__texto"> FrontEnd Store - Todos los derechos reservados Martinsito Brito Diaz 2022.</p>
+    </footer>
+</body>
+</html>

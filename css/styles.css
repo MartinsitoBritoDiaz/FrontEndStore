@@ -82,7 +82,7 @@ img{
 
 /* Main */
 .contenedor{
-    max-width: 100rem;
+    max-width: 80rem;
     margin: 0 auto;
 }
 
@@ -164,38 +164,71 @@ img{
 /* Nostros */
 
 /* Nosotros Descripcion */
-.contenedor .nosotros--descripcion{
-    margin: 0 auto;
+.nosotros{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
 }
 
-.nosotros--descripcion{
+@media (min-width: 768px) {
+    .nosotros{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+.nosotros__descripcion{
+
+}
+
+.nosotros__parrafo{
+    text-align: center;
+    font-size: 1.3rem;  
+}
+
+.nosotros__imagen{    
+    width: 100%;
+    min-height: 30rem;
+    background-repeat: no-repeat;
+    background-image: url(../img/nosotros.jpg);
+    
+    grid-row: 1 / 2;
+}
+
+@media (min-width: 768px) {
+    .nosotros__parrafo{
+        text-align: left;
+    }
+
+    .nosotros__imagen{
+    grid-column: 2 / 3;
+    }
+}
+
+/* Bloques */
+.bloques{
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
 
-
 @media (min-width: 768px) {
-    .nosotros--descripcion{
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .nosotros--imagen{
-        grid-column: 2 / 3;
+    .bloques{
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
-.nosotros--parrafo{
-    font-size: 1.3rem;
+.bloque{    
+    text-align: center;
 }
 
-.nosotros--imagen{    
-    grid-row: 1 / 2;
-    min-height: 30rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(../img/nosotros.jpg);
+.bloque__imagen{
+    width: 100%;
 }
+
+.bloque__titulo{
+    text-transform: uppercase;
+}
+
 
 /* Footer */
 .footer{

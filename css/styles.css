@@ -88,8 +88,9 @@ img{
 
 .contenedor__titulo{
     font-size: 3rem;
-    font-style: bold;
+    font-style: 900;
     text-align: center;
+    text-transform: uppercase;
 }
 
 /* Grid */
@@ -158,6 +159,32 @@ img{
         grid-column: 2 / 4;
         grid-row: 5 / 6;
     }    
+}
+
+/* Nostros */
+
+/* Nosotros Descripcion */
+.contenedor .nosotros--descripcion{
+    width: 85rem;
+    margin: 0 auto;
+}
+
+.nosotros--descripcion{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+}
+
+.nosotros--parrafo{
+    font-size: 1.3rem;
+}
+
+.nosotros--imagen{    
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    min-height: 30rem;
+    background-image: url(../img/nosotros.jpg);
 }
 
 /* Footer */
